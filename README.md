@@ -22,4 +22,21 @@ Each output file is named using the format:
 ---
 
 ## Project Structure
+.
+├── main.py # Interface selection + starts capture
+├── packetUtil.py # Packet capture + demultiplexing + payload saving
+├── tests.py # Unit tests + integration test replay
+└── output/ # Generated payload hex files
 
+
+---
+
+## Requirements
+- Python 3.x
+- Scapy
+- Packet capture driver installed:
+  - **Npcap** (recommended on Windows)
+
+Install dependencies:
+```bash
+pip install scapy
